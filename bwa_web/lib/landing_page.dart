@@ -40,22 +40,22 @@ class _LandingPageState extends State<LandingPage> {
                     Row(
                       children: [
                         navItem('Guides', 0),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         navItem('Pricing', 1),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         navItem('Team', 2),
-                        SizedBox(
+                        const SizedBox(
                           width: 50,
                         ),
                         navItem('Stories', 3),
                       ],
                     ),
                     Image.asset(
-                      'btn.png',
+                      'btnacc.png',
                       width: 153,
                       height: 83,
                     )
