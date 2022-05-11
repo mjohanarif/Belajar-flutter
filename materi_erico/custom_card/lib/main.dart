@@ -83,7 +83,7 @@ class HomePage extends StatelessWidget {
                           child: Column(
                             children: [
                               Text(
-                                'Beautiful SUnset at Paddy Field',
+                                'Beautiful Sunset at Paddy Field',
                                 style: TextStyle(
                                     color: Color(0xfff56d5d), fontSize: 25),
                                 maxLines: 2,
