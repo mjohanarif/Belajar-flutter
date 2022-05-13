@@ -12,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: BlocProvider<ColorBloc>(
-          builder: (context) => ColorBloc(), child: MainPage()),
+        builder: (context) => ColorBloc(),
+        child: MainPage(),
+      ),
     );
   }
 }
@@ -46,13 +48,15 @@ class MainPage extends StatelessWidget {
         title: Text('Bloc dengan library'),
       ),
       body: Center(
-          child: BlocBuilder<ColorBloc, Color>(
-              builder: (context, currentColor) => AnimatedContainer(
-                    duration: Duration(milliseconds: 500),
-                    height: 100,
-                    width: 100,
-                    color: currentColor,
-                  ))),
+        child: BlocBuilder<ColorBloc, Color>(
+          builder: (context, currentColor) => AnimatedContainer(
+            duration: Duration(milliseconds: 500),
+            height: 100,
+            width: 100,
+            color: currentColor,
+          ),
+        ),
+      ),
     );
   }
 }
